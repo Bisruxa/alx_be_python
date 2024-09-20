@@ -14,4 +14,4 @@ if time_bound == "yes":
   reminder += f"Reminder: '{task}' is a " + prio + " that requires immediate attention today!"
 else:
   reminder += f"Note: '{task}' is a "+ prio + "Consider completing it when you have free time."
-print(reminder)
+print(f"reminder")
