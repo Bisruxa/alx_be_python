@@ -11,7 +11,7 @@ match priority:
   case _:
     prio += "Invalid priority level"
 if time_bound == "yes":
-  reminder += f"Reminder: '{task}' is a " + prio + " that requires immediate attention today!"
+  
+  print(f"Reminder: '{task}' is a " + prio + " that requires immediate attention today!")
 else:
-  reminder += f"Note: '{task}' is a "+ prio + "Consider completing it when you have free time."
-print(f"reminder")
+ print(f"Note: '{task}' is a "+ prio + "Consider completing it when you have free time.")
