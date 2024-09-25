@@ -9,9 +9,9 @@ def perform_operation(num1, num2, operation):
       result = num1 * num2
     case 'divide':
       if(num2 == 0):
-        print("division by zero is undefined")
+        result = "division by zero is undefined"
       elif(num2 != 0):
-        result = num1/num2
+        result = num1 / num2
   return result
 
 
