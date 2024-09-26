@@ -1,9 +1,8 @@
-user_prompt = float(input("Enter the temprature to convert: "))
+
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9  
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5 
 
 
-temprature = input("Is this temperature in Celsius or Fahrenheit?(C/F): ").upper()
 def convert_to_celsius(fahrenheit):
   global FAHRENHEIT_TO_CELSIUS_FACTOR
   celsius = (fahrenheit - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
@@ -14,7 +13,8 @@ def convert_to_fahrenheit(celsius):
   fahrenheit = CELSIUS_TO_FAHRENHEIT_FACTOR + 32 * celsius 
   print(f"{celsius}°C is {fahrenheit}°F")
   return fahrenheit
-
+user_prompt = float(input("Enter the temprature to convert: "))
+temprature = input("Is this temperature in Celsius or Fahrenheit?(C/F): ").upper()
 if temprature == "C":
    convert_to_fahrenheit(user_prompt)
 elif temprature == "F":
