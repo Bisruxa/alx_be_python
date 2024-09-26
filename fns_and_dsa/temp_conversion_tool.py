@@ -13,8 +13,8 @@ def convert_to_fahrenheit(celsius):
   fahrenheit = CELSIUS_TO_FAHRENHEIT_FACTOR + 32 * celsius 
   print(f"{celsius}°C is {fahrenheit}°F")
   return fahrenheit
-user_prompt = float(input("Enter the temprature to convert: "))
-temprature = input("Is this temperature in Celsius or Fahrenheit?(C/F): ").upper()
+user_prompt = float(input("Enter the temperature to convert: "))
+temprature = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
 if temprature == "C":
    convert_to_fahrenheit(user_prompt)
 elif temprature == "F":
