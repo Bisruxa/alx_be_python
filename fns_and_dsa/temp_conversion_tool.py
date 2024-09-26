@@ -20,6 +20,6 @@ if temprature == "C":
 elif temprature == "F":
   convert_to_celsius(user_prompt)
 else:
-  print("Invalid choice. Please try again.")
+  print("Invalid temperature. Please enter a numeric value.")
    
 
