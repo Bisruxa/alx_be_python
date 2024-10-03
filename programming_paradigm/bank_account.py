@@ -16,10 +16,10 @@ class BankAccount:
     #  print(f"Withdrew: ${amount}")
      return True
     elif amount > self.account_balance:
-     print("Insufficient funds")
+    #  print("Insufficient funds")
      return False
     else:
       print("amount must be positive")
       return False
   def display_balance(self):
-    print(f"Current Balance: ${self.account_balance}")
+    print(f"Current Balance: $float({self.account_balance})")
