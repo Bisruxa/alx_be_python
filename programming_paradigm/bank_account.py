@@ -22,4 +22,5 @@ class BankAccount:
       print("amount must be positive")
       return False
   def display_balance(self):
-    print(f"Current Balance: $float({self.account_balance})")
+    float(self.account_balance)
+    print(f"Current Balance: ${self.account_balance}")
