@@ -2,11 +2,14 @@ def safe_divide(numerator, denominator):
   try:
     result = numerator / denominator
   except ZeroDivisionError:
-    print("Error: Cannot divide by zero.")
+    result = "Error: Cannot divide by zero."
   except ValueError:
-    print("Error: Please enter numeric values only.")
+    result ="Error: Please enter numeric values only."
   else:
-    print(f"The result of the division is {result}")
-float(numerator) = input("Enter the numerator: ")
-float(denominator) = input("Enter the denominator: ")
+    result = f"The result of the division is {result}"
+  return result
+numerator = input("Enter the numerator: ")
+denominator = input("Enter the denominator: ")
 
+float(denominator)
+float(numerator)
