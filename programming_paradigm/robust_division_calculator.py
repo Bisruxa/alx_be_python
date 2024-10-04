@@ -10,6 +10,6 @@ def safe_divide(numerator, denominator):
   else:
     return f"The result of the division is {result}"
  
-numerator = input("Enter the numerator: ")
-denominator = input("Enter the denominator: ")
+# numerator = input("Enter the numerator: ")
+# denominator = input("Enter the denominator: ")
 
