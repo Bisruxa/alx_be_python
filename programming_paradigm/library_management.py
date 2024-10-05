@@ -21,10 +21,28 @@ class Library:
    if book.title not in self.title:
      self._books.append(book)
   def check_out_title(self,title):
-    self.title =title
+    for book in self._books:
+      if book.title == title:
+          if book.check_out():
+                    print(f"Checked out '{title}' successfully.")
+                    return
+          else:
+                    print(f"'{title}' is already checked out.")
+                    return
+      print(f"Book '{title}' not found in the library.")
+    
   def return_book(self,title):
-    pass
+    for book in self._books:
+            if book.title == title:
+                if book.return_book():
+                    print(f"Returned '{title}' successfully.")
+                    return
+                else:
+                    print(f"'{title}' was not checked out.")
+                    return
+    print(f"Book '{title}' not found in the library.")
   def list_available_books(self):
-    pass
+   for book in self._books:
+      print(book.title)
     
     
