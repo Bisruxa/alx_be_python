@@ -5,10 +5,20 @@ class Book:
 
 class EBook(Book):
  def __init__(self,title,author,file_size):
-  super.__init__(title,author)
+  super().__init__(title,author)
   self.file_size = file_size
+ 
 
-class printBook(Book):
+class PrintBook(Book):
   def __init__(self,title,author,page_count):
-   super.__init__(title,author)
+   super().__init__(title,author)
    self.page_count = page_count
+class Library:
+ def __init__(self):
+  self.books = Book(self.books.title,self.books.author)
+  self.books = EBook(self.books.title,self.books.author, self.books.file_size)
+  self.books = PrintBook(self.books.title,self.books.author,self.books.page_count)
+ def add_books(self,book):
+  pass
+ def list_books(self):
+  print(f"{self.books.title} {self.books.author} {self.books.page_count}")
