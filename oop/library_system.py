@@ -27,7 +27,7 @@ class Library:
         print(f"Book: Pride and Prejudice by Jane Austen")
         for book in self.books:
             if isinstance(book, PrintBook):
-                print(f"PrintBook : {book.title} by {book.author}, Page Count: {book.page_count}")
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
             elif isinstance(book, EBook):
                 
-                print(f"EBook : {book.title} by {book.author}, File Size: {book.file_size}MB")
+                print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}MB")
